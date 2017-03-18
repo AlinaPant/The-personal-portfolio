@@ -1,0 +1,42 @@
+@media (max-width: 64em) {
+	.projects {
+		.pen {
+			width: 90%;
+		}
+
+		.pen_img {
+			width: 45%;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.wrap_social {
+		right: 6%;
+	}
+
+	.wrap_contant {
+		font-size: 100px;
+		line-height: 120px;
+	}
+}
+
+@media (max-width: 35em) {
+	.logo .brand img {
+		width: 84px;
+	}
+
+	.wrap_contant {
+		font-size: 65px;
+	}
+
+	.projects .pen_img {
+		width: 90%;
+	}
+}
+
+@media (max-width: 400px) {
+	.wrap_contant {
+		right: 2%;
+	}
+}

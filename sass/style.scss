@@ -1,0 +1,40 @@
+@import "compass/reset";
+@import "variables";
+@import "mixin";
+@import "header";
+@import "wrap";
+@import "footer";
+@import "adaptive";
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100%;
+	font : {
+		family: $font, sans-serif;
+		size: 16px;
+	}
+	background: $bg_body;
+	color: $color_text;
+	letter-spacing: .8px;
+	overflow-x: hidden;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+::-moz-selection{
+	color: $bg_body;
+  background: $color_text;
+}
+
+::selection{
+	color: $bg_body;
+  background: $color_text;
+}

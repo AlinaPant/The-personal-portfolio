@@ -1,0 +1,28 @@
+@mixin box_align {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -moz-box;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	-moz-box-orient: horizontal;
+	-moz-box-direction: normal;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+
+@mixin for_title {
+	font : {
+		family: $font_title, cursive;
+		size: 27px;
+		weight: 900;
+	}
+}

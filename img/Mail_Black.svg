@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Mail_Black</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Social_icons_black" transform="translate(-260.000000, -1269.000000)" fill="#000000">
+            <g id="Black" transform="translate(60.000000, 169.000000)">
+                <g id="Mail" transform="translate(200.000000, 1100.000000)">
+                    <path d="M30,60 C13.4314575,60 0,46.5685425 0,30 C0,13.4314575 13.4314575,0 30,0 C46.5685425,0 60,13.4314575 60,30 C60,46.5685425 46.5685425,60 30,60 Z M30.418,28.31628 C32.8744,28.31628 44.818,21.6 44.818,21.6 L44.8372,20.4 C44.8372,19.0752 43.762,18 42.4336,18 L18.4024,18 C17.0752,18 16,19.0752 16,20.4 L16,21.4692 C16,21.4692 28.0744,28.31628 30.418,28.31628 Z M30.418,31.61628 C28.0744,31.61628 16.018,25.2 16.0192,25.2 L16,39.6 C16,40.9248 17.0764,42 18.4024,42 L42.4336,42 C43.762,42 44.8372,40.9248 44.8372,39.6 L44.818,25.2 C44.818,25.2 32.9872,31.61628 30.418,31.61628 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
