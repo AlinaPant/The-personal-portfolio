@@ -7,9 +7,7 @@
 @import "adaptive";
 
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	@include box-sizing
 }
 
 body {
@@ -27,6 +25,7 @@ body {
 a {
 	display: inline-block;
 	text-decoration: none;
+	outline: none;
 }
 
 ::-moz-selection{
@@ -38,3 +37,48 @@ a {
 	color: $bg_body;
   background: $color_text;
 }
+
+/* base, which fixed*/
+.grid {
+	position: fixed;
+	width: 100%;
+	padding: 0 65px;
+
+	.row {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	&_line {
+		height: 100vh;
+		border-left: 1px solid $grid_line;
+	}
+}
+
+.col-xs-3 {
+	padding-right: 0;
+	padding-left: 0;
+
+	&:last-child {
+		border-right: 1px solid $grid_line;
+	}
+}
+
+.wrap_social {
+	position: fixed;
+	top: 50%;
+	right: 3%;
+	@include transform(translateY(-50%));
+	z-index: 999;
+
+	li {
+		margin: 15px 0;
+
+		img {
+			width: 30px;
+			height: auto;
+		}
+	}
+}
+
+/* end*/

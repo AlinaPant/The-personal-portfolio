@@ -1,23 +1,44 @@
+@media (min-width: 1600px) {
+	.wrap_container,
+	.grid {
+		max-width: 1600px;
+		margin: auto;
+	}
+
+	.grid {
+		left: 50%;
+		@include transform(translateX(-50%));
+	}
+
+	div.wrap_social {
+		right: 8%;
+	}
+}
+
 @media (max-width: 64em) {
 	.projects {
 		.pen {
-			width: 90%;
+			width: 100%;
 		}
 
 		.pen_img {
-			width: 45%;
+			/* width: 45%;*/
 		}
 	}
 }
 
 @media (max-width: 768px) {
 	.wrap_social {
-		right: 6%;
+		/* right: 6%;*/
 	}
 
 	.wrap_contant {
 		font-size: 100px;
 		line-height: 120px;
+	}
+
+	.pen_item {
+		width: 45%;
 	}
 }
 
@@ -28,15 +49,25 @@
 
 	.wrap_contant {
 		font-size: 65px;
+		@include transition(font-size .3s linear);
+	}
+
+	.wrap_desc {
+		top: 82%;
+		@include transition(top .2s linear);
 	}
 
 	.projects .pen_img {
-		width: 90%;
+		/* width: 90%;*/
+	}
+
+	.pen_item {
+		width: 100%;
 	}
 }
 
 @media (max-width: 400px) {
 	.wrap_contant {
 		right: 2%;
-	}
+	}	
 }

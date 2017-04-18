@@ -1,0 +1,271 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	 v2.0 | 20110126
+	 License: none (public domain)
+*/
+/* line 6, ../sass/pageprojekts.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../sass/pageprojekts.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../sass/pageprojekts.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../sass/pageprojekts.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../sass/pageprojekts.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../sass/pageprojekts.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../sass/pageprojekts.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 71, ../sass/pageprojekts.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* white - beige*/
+/* gray-black*/
+/* beige*/
+/*$grid_line = beige*/
+/* beige*/
+/* line 88, ../sass/pageprojekts.scss */
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  font-family: "Poiret One", sans-serif;
+  font-size: 19px;
+  line-height: 26px;
+  background: #FFF5EE;
+  color: #40484b;
+  letter-spacing: 3px;
+  overflow-x: hidden;
+}
+/* line 102, ../sass/pageprojekts.scss */
+body::before {
+  content: "";
+  position: absolute;
+}
+
+/* line 108, ../sass/pageprojekts.scss */
+a {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  color: #40484b;
+}
+
+/* line 115, ../sass/pageprojekts.scss */
+.contant_wrapper {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+/* line 120, ../sass/pageprojekts.scss */
+aside {
+  position: fixed;
+  float: left;
+  width: 19%;
+  height: 100vh;
+  background: #40484b;
+  padding: 23px 20px 20px;
+  text-align: center;
+}
+/* line 129, ../sass/pageprojekts.scss */
+aside a {
+  color: #DDC8AD;
+}
+/* line 133, ../sass/pageprojekts.scss */
+aside .home_page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 144, ../sass/pageprojekts.scss */
+article {
+  position: relative;
+  float: right;
+  width: 74%;
+  margin-top: 150px;
+}
+
+/* line 153, ../sass/pageprojekts.scss */
+.option_wrapper {
+  position: relative;
+  padding: 30px;
+  margin-bottom: 75px;
+  /* font-weight: 600;*/
+}
+
+/* line 160, ../sass/pageprojekts.scss */
+.option {
+  position: relative;
+  background: #FFF5EE;
+}
+/* line 164, ../sass/pageprojekts.scss */
+.option_img {
+  left: 53%;
+  width: 47%;
+  height: auto;
+  z-index: 2;
+}
+/* line 171, ../sass/pageprojekts.scss */
+.option_info {
+  width: 60%;
+  background: rgba(221, 200, 173, 0.6);
+  padding: 40px 20% 55px 35px;
+  padding: 6% 20% 7.5% 4%;
+  margin-top: -20%;
+  margin-bottom: 18%;
+}
+/* line 179, ../sass/pageprojekts.scss */
+.option_info::before {
+  content: "";
+  position: absolute;
+  top: -82px;
+  right: 0%;
+  width: 50%;
+  height: 15px;
+  background: #40484b;
+  z-index: 1;
+}
+/* line 190, ../sass/pageprojekts.scss */
+.option_info a {
+  font-size: 15px;
+}
+/* line 195, ../sass/pageprojekts.scss */
+.option_details {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 57%;
+  background: rgba(221, 200, 173, 0.6);
+  padding: 40px 35px;
+}
+/* line 203, ../sass/pageprojekts.scss */
+.option_details::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  right: 20%;
+  width: 20px;
+  height: 150%;
+  background: #40484b;
+  z-index: 1;
+}
+/* line 214, ../sass/pageprojekts.scss */
+.option_details p {
+  position: relative;
+  z-index: 1;
+}
+/* line 218, ../sass/pageprojekts.scss */
+.option_details p:hover a::before {
+  width: 150%;
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+/* line 226, ../sass/pageprojekts.scss */
+.option_details a::before {
+  content: "";
+  position: absolute;
+  right: -35px;
+  bottom: 2%;
+  width: 0;
+  height: 36%;
+  background: #FFF5EE;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  z-index: -1;
+}
+
+@media (min-width: 1600px) {
+  /* line 242, ../sass/pageprojekts.scss */
+  .contant_wrapper {
+    max-width: 1600px;
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  /* line 250, ../sass/pageprojekts.scss */
+  .option_img {
+    left: 37%;
+    width: 80%;
+  }
+
+  /* line 255, ../sass/pageprojekts.scss */
+  .option_info {
+    padding: 40px 20% 55px 35px;
+    margin-bottom: 140px;
+  }
+
+  /* line 260, ../sass/pageprojekts.scss */
+  .option_info::before {
+    top: -50px;
+  }
+
+  /* line 264, ../sass/pageprojekts.scss */
+  .option_details {
+    width: 77%;
+  }
+
+  /* line 268, ../sass/pageprojekts.scss */
+  .option_info a {
+    margin-left: -65px;
+  }
+}

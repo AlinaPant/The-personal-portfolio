@@ -1,0 +1,271 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	 v2.0 | 20110126
+	 License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@mixin transform($transform) {
+	-webkit-transform: $transform;
+	-moz-transform: $transform;
+	-o-transform: $transform;
+	-ms-transform: $transform;
+	transform: $transform;
+}
+
+@mixin box-sizing {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin transition($transition) {
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;
+}
+
+* {
+	@include box-sizing
+}
+
+
+
+$bg_body: #FFF5EE; /* white - beige*/
+$color_text: #40484b; /* gray-black*/
+$grid_line: #DDC8AD; /* beige*/
+$hover_project: rgba(221, 200, 173, .6); /*$grid_line = beige*/
+$dot_rhombus: $grid_line; /* beige*/
+$backdowns: 100px;
+$font: "Open Sans";
+$font_title: "Poiret One";
+
+$none: rgba(255, 255, 255, 0);
+
+body {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	font : {
+		family: $font_title, sans-serif;
+		size: 19px;
+	}
+	line-height: 26px;
+	background: $bg_body;
+	color: $color_text;
+	letter-spacing: 3px;
+	overflow-x: hidden;
+
+	&::before {
+		content: "";
+		position: absolute;
+	}
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	outline: none;
+	color: $color_text;	
+}
+
+.contant_wrapper {
+	width: 100vw;
+	min-height: 100vh;
+}
+
+aside {
+	position: fixed;
+	float: left;
+	width: 19%;
+	height: 100vh;
+	background: $color_text;
+	padding: 23px 20px 20px;
+	text-align: center;
+
+	a {
+		color: $grid_line;
+	}
+
+	.home_page {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		display: block;
+		text-transform: uppercase;
+		text-align: center;
+		@include transform(translate(-50%, -50%));
+	}
+}
+
+article {
+	position: relative;
+	float: right;
+	width: 74%;
+	margin-top: 150px;
+}
+
+
+
+.option_wrapper {
+	position: relative;
+	padding: 30px;
+	margin-bottom: 75px;	
+	/* font-weight: 600;*/
+}
+
+.option {
+	position: relative;
+	background: $bg_body;
+
+	&_img {
+		left: 53%;
+		width: 47%;
+		height: auto;
+		z-index: 2;
+	}
+
+	&_info {
+		width: 60%;
+		background: $hover_project;
+		padding: 40px 20% 55px 35px;
+		padding: 6% 20% 7.5% 4%;
+		margin-top: -20%;
+		margin-bottom: 18%;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: -82px;
+			right: 0%;
+			width: 50%;
+			height: 15px;
+			background: $color_text;
+			z-index: 1;
+		}
+
+		a {
+			font-size: 15px;
+		}
+	}
+
+	&_details {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 57%;
+		background: $hover_project;
+		padding: 40px 35px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: -100%;
+			right: 20%;
+			width: 20px;
+			height: 150%;
+			background: $color_text;
+			z-index: 1;
+		}
+
+		p {
+			position: relative;
+			z-index: 1;
+
+			&:hover a::before {
+				width: 150%;
+				@include transition(all .6s ease-out);
+			}
+		}
+
+		a {
+
+			&::before {
+				content: "";
+				position: absolute;
+				right: -35px;
+				bottom: 2%;
+				width: 0;
+				height: 36%;
+				background: $bg_body;
+				@include transition(all .4s ease-in);
+				z-index: -1;
+			}
+		}
+	}
+}
+
+@media (min-width: 1600px) {
+	.contant_wrapper {
+		max-width: 1600px;
+		margin: auto;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.option_img {
+		left: 37%;
+		width: 80%;
+	}
+
+	.option_info {
+		padding: 40px 20% 55px 35px;
+		margin-bottom: 140px;
+	}
+
+	.option_info::before {
+				top: -50px;
+	}
+
+	.option_details {
+		width: 77%;
+	}
+
+	.option_info a {
+		margin-left: -65px;
+	}
+}
