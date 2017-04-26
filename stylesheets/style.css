@@ -246,7 +246,27 @@ header {
   -moz-box-shadow: 0 0 2px 1px #DDC8AD;
   box-shadow: 0 0 2px 1px #DDC8AD;
 }
-/* line 71, ../sass/_wrap.scss */
+/* line 72, ../sass/_wrap.scss */
+.pen .image-scroll {
+  background-position: center 0;
+  background-repeat: no-repeat;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  -webkit-transition: background-position 0.6s ease-in 0s;
+  -moz-transition: background-position 0.6s ease-in 0s;
+  -o-transition: background-position 0.6s ease-in 0s;
+  transition: background-position 0.6s ease-in 0s;
+}
+/* line 78, ../sass/_wrap.scss */
+.pen .image-scroll:hover {
+  background-position: center 100% !important;
+  -webkit-transition: background-position 2s ease-out 0s;
+  -moz-transition: background-position 2s ease-out 0s;
+  -o-transition: background-position 2s ease-out 0s;
+  transition: background-position 2s ease-out 0s;
+}
+/* line 84, ../sass/_wrap.scss */
 .pen_img {
   display: inline-block;
   width: 100%;
@@ -264,84 +284,74 @@ header {
   background-size: cover;
   margin-bottom: 3px;
 }
-/* line 83, ../sass/_wrap.scss */
-.pen_img:hover {
-  -webkit-box-shadow: 0 0 2px 2px #DDC8AD, inset 0 0 0 100vmax rgba(221, 200, 173, 0.6);
-  -moz-box-shadow: 0 0 2px 2px #DDC8AD, inset 0 0 0 100vmax rgba(221, 200, 173, 0.6);
-  box-shadow: 0 0 2px 2px #DDC8AD, inset 0 0 0 100vmax rgba(221, 200, 173, 0.6);
-  -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
-}
-/* line 96, ../sass/_wrap.scss */
+/* line 94, ../sass/_wrap.scss */
 .pen_img_1 {
   background-image: url(http://alinapant.ml/media/bar-graph.gif);
 }
-/* line 100, ../sass/_wrap.scss */
+/* line 98, ../sass/_wrap.scss */
 .pen_img_2 {
   background-image: url(http://alinapant.ml/media/watermelon.png);
 }
-/* line 104, ../sass/_wrap.scss */
+/* line 102, ../sass/_wrap.scss */
 .pen_img_3 {
   background-image: url(http://alinapant.ml/media/app.png);
 }
-/* line 108, ../sass/_wrap.scss */
+/* line 106, ../sass/_wrap.scss */
 .pen_img_4 {
   background-image: url(http://alinapant.ml/media/robot.jpg);
 }
-/* line 112, ../sass/_wrap.scss */
+/* line 110, ../sass/_wrap.scss */
 .pen_img_5 {
   background-image: url(http://alinapant.ml/media/pizza-trust.gif);
 }
-/* line 116, ../sass/_wrap.scss */
+/* line 114, ../sass/_wrap.scss */
 .pen_img_6 {
   background-image: url(http://alinapant.ml/media/oblina.gif);
 }
-/* line 120, ../sass/_wrap.scss */
+/* line 118, ../sass/_wrap.scss */
 .pen_img_7 {
   background-image: url(http://alinapant.ml/media/quote.png);
 }
-/* line 124, ../sass/_wrap.scss */
+/* line 122, ../sass/_wrap.scss */
 .pen_img_8 {
   background-image: url(http://alinapant.ml/media/cogs-icone.gif);
 }
-/* line 128, ../sass/_wrap.scss */
+/* line 126, ../sass/_wrap.scss */
 .pen_img_9 {
   background-image: url(http://alinapant.ml/media/zombie.gif);
 }
-/* line 132, ../sass/_wrap.scss */
+/* line 130, ../sass/_wrap.scss */
 .pen_img_10 {
   background-image: url(http://alinapant.ml/media/maps-icone.gif);
 }
-/* line 136, ../sass/_wrap.scss */
+/* line 134, ../sass/_wrap.scss */
 .pen_img_11 {
   background-image: url(http://alinapant.ml/media/cell-phone.gif);
 }
-/* line 140, ../sass/_wrap.scss */
+/* line 138, ../sass/_wrap.scss */
 .pen_img_12 {
   background-image: url(http://alinapant.ml/media/tiger.png);
 }
-/* line 144, ../sass/_wrap.scss */
+/* line 142, ../sass/_wrap.scss */
 .pen_img_13 {
   background-image: url(http://alinapant.ml/media/cry.gif);
 }
-/* line 148, ../sass/_wrap.scss */
+/* line 146, ../sass/_wrap.scss */
 .pen_img_14 {
   background-image: url(http://alinapant.ml/media/cat-in-space.gif);
 }
 
-/* line 154, ../sass/_wrap.scss */
+/* line 152, ../sass/_wrap.scss */
 .details {
   padding: 10px 10px 25px;
   line-height: 18px;
 }
-/* line 158, ../sass/_wrap.scss */
+/* line 156, ../sass/_wrap.scss */
 .details .desc {
   text-transform: lowercase;
   margin-bottom: 8px;
 }
-/* line 163, ../sass/_wrap.scss */
+/* line 161, ../sass/_wrap.scss */
 .details .what_used {
   font-family: "Poiret One";
   text-transform: uppercase;
@@ -349,7 +359,7 @@ header {
   margin-bottom: 22px;
 }
 
-/* line 171, ../sass/_wrap.scss */
+/* line 169, ../sass/_wrap.scss */
 .link_spark {
   color: #40484b;
   text-shadow: 0.5px 0.5px #DDC8AD;
@@ -358,7 +368,7 @@ header {
   -moz-box-shadow: inset 0 -1px 0 0 #DDC8AD;
   box-shadow: inset 0 -1px 0 0 #DDC8AD;
 }
-/* line 177, ../sass/_wrap.scss */
+/* line 175, ../sass/_wrap.scss */
 .link_spark:hover {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -367,7 +377,7 @@ header {
   text-decoration: line-through;
 }
 
-/* line 184, ../sass/_wrap.scss */
+/* line 182, ../sass/_wrap.scss */
 .btn {
   position: relative;
   left: 50%;
@@ -385,7 +395,7 @@ header {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-/* line 197, ../sass/_wrap.scss */
+/* line 195, ../sass/_wrap.scss */
 .btn:before, .btn:after {
   content: "";
   position: absolute;
@@ -393,7 +403,7 @@ header {
   height: 0;
   opacity: 0;
 }
-/* line 206, ../sass/_wrap.scss */
+/* line 204, ../sass/_wrap.scss */
 .btn:before {
   bottom: 0;
   left: -1px;
@@ -404,7 +414,7 @@ header {
   -moz-transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
   transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
 }
-/* line 226, ../sass/_wrap.scss */
+/* line 224, ../sass/_wrap.scss */
 .btn:after {
   top: 0;
   right: -1px;
@@ -415,25 +425,25 @@ header {
   -moz-transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
   transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
 }
-/* line 246, ../sass/_wrap.scss */
+/* line 244, ../sass/_wrap.scss */
 .btn:hover {
   background: #40484b;
   color: #DDC8AD;
 }
-/* line 250, ../sass/_wrap.scss */
+/* line 248, ../sass/_wrap.scss */
 .btn:hover::before, .btn:hover::after {
   height: 100%;
   width: 100%;
   opacity: 1;
 }
-/* line 257, ../sass/_wrap.scss */
+/* line 255, ../sass/_wrap.scss */
 .btn:hover::before {
   -webkit-transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
   -o-transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
   -moz-transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
   transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
 }
-/* line 273, ../sass/_wrap.scss */
+/* line 271, ../sass/_wrap.scss */
 .btn:hover::after {
   -webkit-transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
   -o-transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;

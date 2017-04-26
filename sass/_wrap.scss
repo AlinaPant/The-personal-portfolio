@@ -68,6 +68,19 @@
 		@include box-shadow(0 0 2px 1px $grid_line);
 	}
 
+
+	.image-scroll {
+		background-position: center 0;
+		background-repeat: no-repeat;
+		@include background_size(100% auto);
+		@include transition(background-position .6s ease-in 0s);
+
+		&:hover {
+			background-position: center 100% !important;
+			@include transition(background-position 2s ease-out 0s);
+		}
+	}
+
 	&_img {
 		display: inline-block;
 		width: 100%;
@@ -75,23 +88,8 @@
 		@include box_sizing;
 		@include transition(all .6s ease-in);
 		background-position: center center;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
+		@include background_size(cover);
 		margin-bottom: 3px;
-
-		&:hover {
-			-webkit-box-shadow:
-				0 0 2px 2px $grid_line,
-				inset 0 0 0 100vmax $hover_project;
-			-moz-box-shadow:
-				0 0 2px 2px $grid_line,
-				inset 0 0 0 100vmax $hover_project;
-			box-shadow:
-				0 0 2px 2px $grid_line,
-				inset 0 0 0 100vmax $hover_project;
-			@include transition(all .4s ease-out);
-		}
 
 		&_1 {
 			background-image: $pen_1;

@@ -62,6 +62,12 @@
 	box-shadow: $box-shadow;
 }
 
+@mixin background_size($bg_size) {
+	-moz-background-size: $bg_size;
+	-o-background-size: $bg_size;
+	background-size: $bg_size;
+}
+
 @mixin keyframes($name) {
 	@-webkit-keyframes #{$name} {
 		@content; 
