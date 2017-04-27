@@ -1,4 +1,10 @@
 $(document).ready(function () {
+
+	var grid = $(".grid_line");
+
+	setTimeout(function(){
+		grid.addClass("draw_line");
+	}, 500);
 	
 	var social = $(".wrap_social");
 

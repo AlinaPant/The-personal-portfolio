@@ -630,21 +630,30 @@ a {
 }
 /* line 52, ../sass/style.scss */
 .grid_line {
-  height: 100vh;
+  height: 0;
   border-left: 1px solid #DDC8AD;
 }
 
 /* line 58, ../sass/style.scss */
+.draw_line {
+  height: 100vh;
+  -webkit-transition: height 0.6s linear;
+  -moz-transition: height 0.6s linear;
+  -o-transition: height 0.6s linear;
+  transition: height 0.6s linear;
+}
+
+/* line 63, ../sass/style.scss */
 .col-xs-3 {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 62, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 .col-xs-3:last-child {
   border-right: 1px solid #DDC8AD;
 }
 
-/* line 67, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 .wrap_social {
   position: fixed;
   top: 50%;
@@ -656,11 +665,11 @@ a {
   transform: translateY(-50%);
   z-index: 999;
 }
-/* line 74, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .wrap_social li {
   margin: 15px 0;
 }
-/* line 77, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .wrap_social li img {
   width: 30px;
   height: auto;

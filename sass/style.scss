@@ -50,9 +50,14 @@ a {
 	}
 
 	&_line {
-		height: 100vh;
+		height: 0;
 		border-left: 1px solid $grid_line;
 	}
+}
+
+.draw_line {
+	height: 100vh;
+	@include transition(height .6s linear);
 }
 
 .col-xs-3 {
